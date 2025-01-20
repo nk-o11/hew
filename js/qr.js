@@ -12,4 +12,10 @@ gazou.src = `./image/ニンニク${nk}ヤサイ${ysi}アブラ${abr}.png`;
 
 const url=window.location.href;
 console.log(url);
-const qrcode = new QRCode(qr,{text: url, width: 300, height: 300});
+const qrcode = new QRCode(qr,{
+  text: url,
+  width: 300,
+  height: 300,
+  correctLevel: QRCode.CorrectLevel.H,
+  version: 10
+});
