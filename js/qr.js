@@ -5,7 +5,7 @@ const ysi = urlParams.get('ヤサイ');
 const abr = urlParams.get('アブラ');
 // coalにひとまとめにする
 const coal = `ニンニク:${nk}  ヤサイ:${ysi}  アブラ:${abr}`;
-const order = document.createElement('p');
+const order = document.createElement('h1');
 ctb.appendChild(order);
 order.innerText = coal;
 gazou.src = `./image/ニンニク${nk}ヤサイ${ysi}アブラ${abr}.png`;
